@@ -16,6 +16,16 @@ module.exports = plop => {
         type:'add', // 添加全新文件
         path:'src/components/{{name}}/{{name}}.js',
         templateFile:'plop-templates/component.hbs'
+      },
+      {
+        type:'add', // 添加全新文件
+        path:'src/components/{{name}}/{{name}}.css',
+        templateFile:'plop-templates/component.css.hbs'
+      },
+      {
+        type:'add', // 添加全新文件
+        path:'src/components/{{name}}/{{name}}.test.js',
+        templateFile:'plop-templates/component.test.hbs'
       }
     ]
   })
